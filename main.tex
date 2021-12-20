@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[brazil,english,portuguese]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{boxedminipage}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{hmargin=1cm,vmargin=1cm}
+\usepackage[obeyspaces]{url}
+\input{includes/listings}
+
+\setlength{\paperheight}{29.7cm}
+\setlength{\footskip}{1.0cm}
+\setlength{\textheight}{25.0cm}
+\setlength{\textwidth}{16.0cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\topmargin}{0.0cm}
+\setlength{\headsep}{3.0cm}
+\pagestyle{fancy}
+\usepackage{hyperref}
+
+\chead{
+\noindent\begin{minipage}{0.2\textwidth}
+\includegraphics[height=2.5cm]{files/arch.pdf}
+\end{minipage}
+\begin{minipage}{0.7\textwidth}
+\centering
+{\sf {\Large Instituto de Matemática e Estatística - USP}}
+\end{minipage}
+}
+
+\begin{document}
+
+\begin{center}
+{\sf {\large \bf{MACXXXX - Nome da Disciplina}}}
+
+\vspace{1.5cm}
+
+{\sf {\large \bf{Nome do Trabalho}}}
+\end{center}
+\vspace{1cm}
+
+\begin{minipage}{0.8\textwidth}
+	\begin{flushright}
+	Thiago Gomes Veríssimo - N. USP 123456 - 19/12/2021
+	\end{flushright}
+\end{minipage}
+
+\vspace{1.0cm}
+
+\input{content}
+
+\textbf{Referências Bibliográficas}
+\renewcommand\refname{\vskip -1cm}
+\bibliographystyle{apalike2}
+\bibliography{includes/bibliography}
+
+
+
+
+\end{document}
